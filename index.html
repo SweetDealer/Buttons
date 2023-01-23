@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/css/vendor.css?v=3" />
-    <link rel="stylesheet" href="./styles/css/style.css?v=3" />
+    <link rel="stylesheet" href="./styles/css/vendor.css?v=4" />
+    <link rel="stylesheet" href="./styles/css/style.css?v=4" />
 
     <title>Document</title>
   </head>
@@ -30,53 +30,11 @@
           </button>
         </div>
         <div class="button-split__dropdown">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <div class="alternative-first">
-        <div class="button-split">
-          <div class="button-split__buttons">
-            <button class="button button-split__left">text</button>
-            <button class="button button-split__right">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                width="24"
-                viewbox="0 0 48 48"
-              >
-                <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
-              </svg>
-            </button>
-          </div>
-          <div class="button-split__dropdown">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-      </div>
-      <div class="alternative-second">
-        <div class="button-split">
-          <div class="button-split__buttons">
-            <button class="button button-split__left">text</button>
-            <button class="button button-split__right">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                width="24"
-                viewbox="-8 -8 64 64"
-              >
-                <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
-              </svg>
-            </button>
-          </div>
-          <div class="button-split__dropdown">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+          <ul class="button-split__menu-list">
+            <li class="button-split__menu-item">Link 1</li>
+            <li class="button-split__menu-item" disabled>Link 2</li>
+            <li class="button-split__menu-item">Link 3</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -105,28 +63,6 @@
           <a href="#">Link 3</a>
         </div>
       </div>
-      <div class="alternative-first">
-        <div class="button-split" disabled>
-          <div class="button-split__buttons">
-            <button class="button button-split__left">text</button>
-            <button class="button button-split__right">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                width="24"
-                viewbox="0 0 48 48"
-              >
-                <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
-              </svg>
-            </button>
-          </div>
-          <div class="button-split__dropdown">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-      </div>
     </div>
   </body>
   <style>
@@ -134,8 +70,8 @@
       padding: 50px 50px;
     }
     .row > * {
-        margin: 10px;
-      }
+      margin: 10px;
+    }
   </style>
   <script src="./js/button.js"></script>
 </html>

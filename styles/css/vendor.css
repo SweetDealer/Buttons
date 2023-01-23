@@ -38,3 +38,11 @@ a:visited {
   text-decoration: none;
   color: inherit;
 }
+ul li {
+  list-style: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
