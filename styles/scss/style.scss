@@ -3,9 +3,10 @@
     --background-button-active: rgba(0, 0, 0, 0.1);
     --background-button-hover: rgba(0, 0, 0, 0.04);
     --box-shadow-hover: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
-        0px 1px 10px 0px rgb(0 0 0 / 12%); 
+        0px 1px 10px 0px rgb(0 0 0 / 12%);
+    --color-for-button-alternative-hover: rgb(8, 82, 179);
+    --color-for-button-alternative: rgba(6, 95, 212);
 }
-
 
 .button {
     min-width: 3rem;
@@ -164,5 +165,34 @@
 .button-split--open {
     .button-split__dropdown {
         display: block;
+    }
+}
+
+.alternative-first {
+    display: inline-block;
+    .button-split__left {
+        margin-right: 1px;
+    }
+}
+
+.alternative-second {
+    display: inline-block;
+    .button-split {
+        .button-split__left {
+            background: var(--color-for-button-alternative);
+            border: 1px solid var(--color-for-button-alternative);
+            &:hover {
+                background: var(--color-for-button-alternative-hover);
+                box-shadow: none;
+            }
+        }
+        .button-split__right {
+            background: var(--color-for-button-alternative);
+            border: 1px solid var(--color-for-button-alternative);
+            &:hover {
+                background: var(--color-for-button-alternative-hover);
+                box-shadow: none;
+            }
+        }
     }
 }

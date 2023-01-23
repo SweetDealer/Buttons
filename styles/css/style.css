@@ -4,6 +4,8 @@
   --background-button-hover: rgba(0, 0, 0, 0.04);
   --box-shadow-hover: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
       0px 1px 10px 0px rgb(0 0 0 / 12%);
+  --color-for-button-alternative-hover: rgb(8, 82, 179);
+  --color-for-button-alternative: rgba(6, 95, 212);
 }
 
 .button {
@@ -165,4 +167,31 @@
 
 .button-split--open .button-split__dropdown {
   display: block;
+}
+
+.alternative-first {
+  display: inline-block;
+}
+.alternative-first .button-split__left {
+  margin-right: 1px;
+}
+
+.alternative-second {
+  display: inline-block;
+}
+.alternative-second .button-split .button-split__left {
+  background: var(--color-for-button-alternative);
+  border: 1px solid var(--color-for-button-alternative);
+}
+.alternative-second .button-split .button-split__left:hover {
+  background: var(--color-for-button-alternative-hover);
+  box-shadow: none;
+}
+.alternative-second .button-split .button-split__right {
+  background: var(--color-for-button-alternative);
+  border: 1px solid var(--color-for-button-alternative);
+}
+.alternative-second .button-split .button-split__right:hover {
+  background: var(--color-for-button-alternative-hover);
+  box-shadow: none;
 }
