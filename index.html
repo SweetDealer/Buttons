@@ -10,7 +10,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="row" style="padding: 50px 350px">
+    <div class="row">
       <button class="button button--contain">Contained button</button>
       <button class="button button--outline">Outlined button</button>
       <button class="button button--text">Text button</button>
@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="row" style="padding: 50px 350px">
+    <div class="row">
       <button class="button button--contain" disabled>contained button</button>
       <button class="button button--outline" disabled>outlined button</button>
       <button class="button button--text" disabled>Text button</button>
@@ -63,5 +63,13 @@
       </div>
     </div>
   </body>
+  <style>
+    .row {
+      padding: 50px 100px;
+    }
+    .row > * {
+        margin: 10px;
+      }
+  </style>
   <script src="./js/button.js"></script>
 </html>
