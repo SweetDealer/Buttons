@@ -1,0 +1,168 @@
+:root {
+  --background-button-disabled: rgba(0, 0, 0, 0.1);
+  --background-button-active: rgba(0, 0, 0, 0.1);
+  --background-button-hover: rgba(0, 0, 0, 0.04);
+  --box-shadow-hover: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
+      0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.button {
+  min-width: 3rem;
+  min-height: 2.25rem;
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  line-height: 1;
+  border-radius: 0.25rem;
+  letter-spacing: 0.09em;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+.button[disabled] {
+  pointer-events: none;
+  color: var(--mdc-theme-text-disabled-on-background);
+}
+
+.button--contain {
+  background: var(--mdc-theme-primary);
+  color: var(--mdc-theme-text-primary-on-dark);
+  border: 1px solid var(--mdc-theme-primary);
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button--contain[disabled] {
+  pointer-events: none;
+  background: var(--background-button-disabled);
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+.button--contain:hover {
+  opacity: 0.9;
+  box-shadow: var(--box-shadow-hover);
+}
+.button--contain:active {
+  opacity: 0.8;
+}
+
+.button--outline {
+  background: none;
+  color: var(--mdc-theme-primary);
+  border: 1px solid var(--mdc-theme-primary);
+}
+.button--outline[disabled] {
+  border: 1px solid var(--mdc-theme-text-disabled-on-background);
+}
+.button--outline:hover {
+  background: var(--mdc-theme-primary-light-hover);
+}
+.button--outline:active {
+  background: var(--mdc-theme-primary-light-active);
+}
+
+.button--text {
+  border: none;
+  background: none;
+  color: var(--mdc-theme-primary);
+}
+.button--text:hover {
+  background: var(--mdc-theme-primary-light-hover);
+}
+.button--text:active {
+  background: var(--mdc-theme-primary-light-active);
+}
+
+.button--text-red {
+  color: var(--mdc-theme-error);
+  border: none;
+  background: none;
+}
+.button--text-red:hover {
+  background: var(--background-button-hover);
+}
+.button--text-red:active {
+  background: var(--background-button-active);
+}
+
+.button-split {
+  display: inline-block;
+  position: relative;
+}
+.button-split[disabled] {
+  pointer-events: none;
+}
+.button-split[disabled] .button-split__buttons {
+  box-shadow: none;
+}
+.button-split[disabled] .button-split__left,
+.button-split[disabled] .button-split__right {
+  color: var(--mdc-theme-text-disabled-on-background);
+  background: var(--background-button-disabled);
+  border: 1px solid transparent;
+}
+.button-split[disabled] .button-split__left svg,
+.button-split[disabled] .button-split__right svg {
+  fill: var(--mdc-theme-text-disabled-on-background);
+}
+
+.button-split__buttons {
+  display: inline-flex;
+  min-width: 3rem;
+  box-shadow: var(--box-shadow-hover);
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0.25rem;
+}
+
+.button-split__left {
+  background: var(--mdc-theme-primary);
+  color: var(--mdc-theme-text-primary-on-dark);
+  border: 1px solid var(--mdc-theme-primary);
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.button-split__left:hover {
+  opacity: 0.9;
+  box-shadow: var(--box-shadow-hover);
+}
+.button-split__left:active {
+  opacity: 0.8;
+}
+
+.button-split__right {
+  display: inline-flex;
+  background: var(--mdc-theme-primary);
+  border: 1px solid var(--mdc-theme-primary);
+  border-radius: 0 0.25rem 0.25rem 0;
+  padding: 0;
+  min-width: 0;
+  align-items: center;
+}
+.button-split__right svg {
+  fill: var(--mdc-theme-text-primary-on-dark);
+}
+.button-split__right:hover {
+  opacity: 0.9;
+  box-shadow: var(--box-shadow-hover);
+}
+.button-split__right:active {
+  opacity: 0.8;
+}
+
+.button-split__dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 0.25rem;
+  background-color: #f1f1f1;
+  color: #000;
+  z-index: 99;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+}
+
+.button-split--open .button-split__dropdown {
+  display: block;
+}

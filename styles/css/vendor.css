@@ -1,0 +1,39 @@
+:root {
+    --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
+    --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
+    --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
+    --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.38);
+    --mdc-theme-text-icon-on-background: rgba(0, 0, 0, 0.38);
+    --mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+    --mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
+    --mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+    --mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+    --mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
+    --mdc-theme-text-primary-on-dark: white;
+    --mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
+    --mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
+    --mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
+    --mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
+    --md-theme-element-background: white;
+    --md-theme-background: rgb(238, 238, 238);
+    --md-theme-input-border: rgb(127, 127, 127);
+    --md-theme-input-border-error: rgb(229, 57, 53);
+    --md-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+    --md-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+    --mdc-theme-primary: rgb(6, 95, 212);
+    --mdc-theme-primary-light: rgba(6, 95, 212, .1);
+    --mdc-theme-primary-light-hover: rgb(6, 95, 212, .2);
+    --mdc-theme-primary-light-active: rgb(6, 95, 212, .3);
+    --mdc-theme-secondary-light: rgba(1, 135, 134, 0.5);
+    --box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    --card-text-color: rgba(0, 0, 0, .5);
+    --font-size-secondary: 0.875rem;
+    --list-background-on-hover-color: rgba(0, 0, 0, 0.04);
+    --list-background-secondary-color: #f9f9f9;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}

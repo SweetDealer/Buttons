@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/vendor.css" />
+    <link rel="stylesheet" href="./styles/css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row" style="padding: 50px 350px">
+      <div class="test"></div>
+      <button class="button button--contain">Contained button</button>
+      <button class="button button--outline">Outlined button</button>
+      <button class="button button--text">Text button</button>
+      <button class="button button--text-red">Text button</button>
+      <div class="button-split">
+        <div class="button-split__buttons">
+          <button class="button button-split__left">text</button>
+          <button class="button button-split__right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="24"
+              viewbox="0 0 48 48"
+            >
+              <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
+            </svg>
+          </button>
+        </div>
+        <div class="button-split__dropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="padding: 50px 350px">
+      <button class="button button--contain" disabled>Contained button</button>
+      <button class="button button--outline" disabled>Outlined button</button>
+      <button class="button button--text" disabled>Text button</button>
+      <button class="button button--text-red" disabled>Text button</button>
+      <div class="button-split" disabled>
+        <div class="button-split__buttons">
+          <button class="button button-split__left">text</button>
+          <button class="button button-split__right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              width="24"
+              viewbox="0 0 48 48"
+            >
+              <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
+            </svg>
+          </button>
+        </div>
+        <div class="button-split__dropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/button.js"></script>
+</html>
