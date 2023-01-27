@@ -1,6 +1,6 @@
-document.querySelectorAll('.button-split__right, .button-split__dropdown li').forEach((button) => {
+document.querySelectorAll('.button-group--right, .dropdown-menu li').forEach((button) => {
     button.addEventListener('click', () => {
-        button.closest('.button-split').classList.toggle('button-split--open')
+        button.closest('.button-with-dropdown').classList.toggle('button-group--open')
         console.log(1)
     });
 });

@@ -11,15 +11,18 @@
   </head>
   <body>
     <div class="row">
-      <button class="button button--contain">Contained button</button>
-      <button class="button button--outline">Outlined button</button>
+      <button class="button button--contained">Contained button</button>
+      <button class="button button--outlined">Outlined button</button>
       <button class="button button--text">Text button</button>
       <button class="button button--text-red">Text button</button>
-      <div class="button-split">
-        <div class="button-split__buttons">
-          <button class="button button-split__left">text</button>
-          <button class="button button-split__right">
+      <div class="button-with-dropdown">
+        <div class="button-group">
+          <button class="button button--contained button-group--left">
+            text
+          </button>
+          <button class="button button--contained button-group--right">
             <svg
+              class="button-icon"
               xmlns="http://www.w3.org/2000/svg"
               height="24"
               width="24"
@@ -29,39 +32,45 @@
             </svg>
           </button>
         </div>
-        <div class="button-split__dropdown">
-          <ul class="button-split__menu-list">
-            <li class="button-split__menu-item">Link 1</li>
-            <li class="button-split__menu-item" disabled>Link 2</li>
-            <li class="button-split__menu-item">Link 3</li>
+        <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item">Link 1</li>
+            <li class="dropdown-menu__item" disabled>Link 2</li>
+            <li class="dropdown-menu__item">Link 3</li>
           </ul>
         </div>
       </div>
+      <div class="dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__item">Link 1</li>
+            <li class="dropdown-menu__item" disabled>Link 2</li>
+            <li class="dropdown-menu__item">Link 3</li>
+          </ul>
+        </div>
     </div>
+
     <div class="row">
-      <button class="button button--contain" disabled>contained button</button>
-      <button class="button button--outline" disabled>outlined button</button>
+      <button class="button button--contained" disabled>
+        contained button
+      </button>
+      <button class="button button--outlined" disabled>outlined button</button>
       <button class="button button--text" disabled>Text button</button>
       <button class="button button--text-red" disabled>Text button</button>
-      <div class="button-split" disabled>
-        <div class="button-split__buttons">
-          <button class="button button-split__left">text</button>
-          <button class="button button-split__right">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24"
-              width="24"
-              viewbox="0 0 48 48"
-            >
-              <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
-            </svg>
-          </button>
-        </div>
-        <div class="button-split__dropdown">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+      <div class="button-group" disabled>
+        <button class="button button--contained button-group--left">
+          text
+        </button>
+        <button class="button button--contained button-group--right">
+          <svg
+            class="button-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            width="24"
+            viewbox="0 0 48 48"
+          >
+            <path d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z" />
+          </svg>
+        </button>
       </div>
     </div>
   </body>
